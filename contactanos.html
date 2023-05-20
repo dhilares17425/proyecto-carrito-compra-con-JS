@@ -1,0 +1,123 @@
+<!DOCTYPE html>
+<html lang="es">
+  <head>
+    <meta charset="UTF-8" />
+    <meta
+      name="viewport"
+      content="width=device-width, initial-scale=1.0, maximum-scale=1.0"
+    />
+    <meta http-equiv="X-UA-Compatible" content="ie=edge" />
+    <title>Recojo en Tienda</title>
+    <link rel="stylesheet" href="contactanos.css" />
+  </head>
+  <head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/css/bootstrap.min.css"
+        integrity="sha384-JcKb8q3iqJ61gNV9KGb8thSsNjpSL0n8PARn9HuZOnIxN0hoP+VmmDGMN5t9UJ0Z" crossorigin="anonymous">
+    <link rel="stylesheet" href="style.css">
+    <link rel="stylesheet" href="navbar.css">
+    <link
+    rel="stylesheet"
+    href="https://cdn.jsdelivr.net/npm/normalize.css@8.0.1/normalize.min.css"
+  />
+  <link
+  href="https://fonts.googleapis.com/css2?family=Montserrat:wght@400;500;700&display=swap"
+  rel="stylesheet"
+/>
+    <title>Tienda de Funkos</title>
+</head>
+
+<!--Sección principal -->
+
+
+<!-- menu de información  -->
+ <header class ="topheader">
+    <nav class ="topnav">
+    <a href ="#" class = "logo">
+        <img height="50" width="50" src="./img/logo.jpeg"alt ="Inforcompu"/> <!-- falta colocar la imagen -->
+        <div>
+            <a href="presentacion.html"> Fredy García </a></li> <br />
+            <a href="presentacion.html"> Roy Ramirez</a></li> <br />
+
+    </div>
+    </a>
+<!--<button class ="open-menu" aria-label="Abrir menú">
+    <img src="img/hamburger-icon.svg" alt="abrir menu">
+</button>
+
+    <ul class="menu">
+        <button class ="close-menu" aria-label="Cerrar menú">
+            <img src="img/close-icon.svg" alt="Cerrar menu"> -->
+            <li><a href="formulario.html">Registrate</a></li>
+            <li><a href="index.html">Tienda</a></li>
+        <!--<li><a href="#experiencie">Experiencia</a></li>-->
+        <li><a href="contactanos.html">Recojo en tienda</a></li>
+    </ul>
+    </nav>
+ </header>
+
+
+
+
+
+  <body>
+    <form action="" class="formulario">
+      <img src="./img/logo.jpeg" class="imgLogo" />
+
+      <h1 class="formulario__titulo">TIENDA DE FUNKOS</h1>
+      <h3 class="formulario__subtitulo">Recojo en tienda</h3>
+      <p class="formulario__parrafo">
+        Llena este pequeño formulario para agendar tu cita de recojo en la tienda de FUNKOS.
+      </p>
+
+      <label for="cliente" class="formulario__label">¿Cuál es tu nombre?</label>
+      <input
+        id="cliente"
+        type="text"
+        class="formulario__input"
+        placeholder="Indica cuál es tu nombre completo"
+      />
+
+      <label for="fecha" class="formulario__label"
+        >Indica la fecha de tu RECOJO</label
+      >
+      <input
+        id="fecha"
+        type="date"
+        class="formulario__input"
+        pattern="[0-9]{4}-[0-9]{2}-[0-9]{2}"
+      />
+
+      <label for="hora" class="formulario__label"
+        >Indica la hora de tu RECOJO</label
+      >
+      <input id="hora" type="time" class="formulario__input" />
+
+      <label for="empleado" class="formulario__label"
+        >Selecciona un producto</label
+      >
+      <select id="empleado" name="listaempleados" class="formulario__input">
+        <option>FUNKOS</option>
+        <option>OTROS</option>
+      </select>
+
+      <label for="servicio" class="formulario__label"
+        >¿Cómo desea pagar su Producto</label
+      >
+      <select id="servicio" name="listaservicios" class="formulario__input">
+        <option>VISA - $VALOR</option>
+        <option>MASTERCARD - $VALOR</option>
+        <option>TRANSFERENCIA - $VALOR</option>
+        <option>YAPE - $VALOR</option>
+        <option>PLIN - $VALOR</option>
+      </select>
+
+      <div id="respuesta"></div>
+
+      <button id="submit" class="formulario__submit">Enviar a WhatsApp</button>
+    </form>
+    <script src="contactanos.js"></script>
+  </body>
+</html>
+

@@ -1,0 +1,158 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+
+.item {
+  border: 2px solid #000;
+  padding: 10px;
+  border-radius: 20px;
+}
+
+.item-title {
+  text-transform: uppercase;
+  text-align: center;
+  font-weight: 600;
+}
+
+.item-image {
+  height: 300px;
+  width: 100%;
+}
+
+
+.item-details {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  margin: 20px 0px 15px;
+}
+
+.item-details > .item-price {
+  margin: 0;
+}
+
+/* ? SHOPPING CART */
+.shopping-cart-items {
+  padding: 20px 0px;
+}
+
+.shopping-cart-header {
+  border-bottom: 1px solid #ccc;
+}
+
+.shopping-cart-image {
+  max-width: 80px;
+  border-radius: 20px;
+}
+
+.shopping-cart-quantity-input {
+  max-width: 45px;
+  border: 1px solid #ccc;
+  border-radius: 5px;
+  background: #eee;
+  padding: 5px;
+}
+
+.shopping-cart-total {
+  min-height: 96px;
+}
+:root{
+  --theme-color: rgba(176, 180, 181, 0.675);
+  --primary-color: #124f88;
+  --secundary-color: #F7C331;
+  --text-color-inverse: white;
+  --text-color: rgb(39, 118, 33);
+  --navbar-shallow-color: #e5e5e5;
+  --menu-mobile-background-color: #3A4460;
+
+}
+body {
+  font-family: 'Montserrat', sans-serif;
+  background-color: var(--theme-color);
+  color: var(--text-color);
+  padding: auto;
+}
+
+a {
+  text-decoration: none;
+  color: var(--text-color);
+}
+
+.contenedor {
+  background: #fff;
+  border-radius: 2px;
+  box-shadow: 19px 20px 8px -9px rgba(0,0,0,0.2);
+  overflow: hidden;
+  width: 400px;
+  max-width: 100%;
+}
+.cabecera {
+  background: #13334c;
+  color:azure;
+  text-align: center;
+  border-bottom: 1px solid #f0f0f0;
+  padding: 20px 40px;
+}
+#formulario {
+  padding: 30px 20px;
+}
+
+.form-control {    
+  margin-bottom: 7px;
+  padding-bottom: 20px;
+  position: relative;
+}
+
+.form-control label {
+  display: inline-block;
+  margin-bottom: 7px;
+  font:weight 200px
+}
+
+.form-control input {
+  border: none;
+  background-color: #f0f0f0;
+  display: block;
+  font-family: inherit;
+  font-size: 16px;
+  padding: 12px;
+  width: 100%;    
+}
+.form-control, input:focus {
+  outline: none;
+}
+
+.form-control.ok input {
+  border: 0.1px solid;
+  border-color: #08ffc8;
+}
+.form-control.falla input {
+  border: 0.1px solid;
+  border-color: #fe5f55;
+}
+
+#formulario button {
+  background: #fd4f00;
+  border:1px solid #fd5f00;
+  border-radius: 2px;
+  color: #f6f6e9;
+  display: block;
+  width: 100%;
+  padding: 10px;
+  font-size: 18px;
+}
+.form-control p {
+  visibility: hidden;
+  position: absolute;
+  font-size: small;
+  font-weight: 500;
+  text-align: right;
+}
+
+.form-control.falla p {
+  visibility: visible;
+  color:#e74c3c;
+}
